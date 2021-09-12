@@ -1,0 +1,20 @@
+class Mahasiswa(val nama: String, val nim: String, val ipk: Double){
+    var alamat: String = "-"
+    
+    constructor(nama: String, nim: String, ipk: Double, alamat: String): this(nama,nim,ipk){
+        this.alamat = alamat
+    }
+    
+    init{
+        println("$nama sudah berhasil ditambahkan")
+        println("nama: ${nama} \nnim: ${nim} \nipk: ${ipk} \nalamat: ${alamat}")
+        println("======================")
+    }
+}
+
+fun main(){
+    val a = Mahasiswa ("Livya Susilo","71190456",3.5)
+    val b = Mahasiswa ("Susilo Livya","71190678",3.8)
+    val c = Mahasiswa ("Suli loya","71190345",3.4)
+
+}
