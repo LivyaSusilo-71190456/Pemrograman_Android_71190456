@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.ac.ukdw.pertemuan5_71190456">
+    package="id.ac.ukdw.tugasakhir71190456">
 
     <application
         android:allowBackup="true"
@@ -8,21 +8,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Pertemuan5_71190456">
+        android:theme="@style/Theme.TugasAkhir71190456">
         <activity
-            android:name=".MainActivity">
-            <!--android:exported="true">-->
-        </activity>
+            android:name=".ui.login.penduduk"
+            android:exported="true" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".PendudukActivity"/>
     </application>
 
 </manifest>
